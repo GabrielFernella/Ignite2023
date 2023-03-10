@@ -6,6 +6,8 @@
 5. npm i eslint @rocketseat/eslint-config -D
 6. npm i knex sqlite3
 7. npm i knex -g
+8. npm i dotenv
+9. npm i zod (para validação de dados)
 
 
 # commands
