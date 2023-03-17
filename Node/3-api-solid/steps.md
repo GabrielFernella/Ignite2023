@@ -4,11 +4,20 @@
 3. npm i dotenv
 4. npm i zod
 5. npm i eslint @rocketseat/eslint-config -D
+6. npm i prisma -D
+7. npm i @prisma/client
+8. 
 
 
 
 # Commands
 1. npx tsc --init
+2. npx prisma init
+3. npx prisma generate
+4. docker run --name api-solid-pg -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker  -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql
+5. npx prisma migrate dev
+6. npx prisma studio
+7. docker compose up -d    ||   docker rm api-solid-pg || docker compose stop
 
 
 
