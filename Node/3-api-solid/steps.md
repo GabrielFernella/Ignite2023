@@ -6,7 +6,9 @@
 5. npm i eslint @rocketseat/eslint-config -D
 6. npm i prisma -D
 7. npm i @prisma/client
-8. 
+8. npm i bcryptjs
+9. npm i -D @types/bcryptjs
+10. npm i vitest vite-tsconfig-paths -D
 
 
 
