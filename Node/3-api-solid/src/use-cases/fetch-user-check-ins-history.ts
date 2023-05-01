@@ -1,0 +1,31 @@
+import { CheckInsRepository } from '@/repositories/check-ins-repository'
+import { CheckIn } from '@prisma/client'
+import { ResourceNotFoundError } from './errors/resource-not-found-error'
+
+interface FetchUserCheckInsHistoryUseCaseRequest {
+  userId: string
+  page: number
+}
+
+interface FetchUserCheckInsHistoryUseCaseResponse {
+  checkIns: CheckIn[]
+}
+
+export class FetchUserCheckInsHistoryUseCaseUseCase {
+  constructor(private checkInsRepository: CheckInsRepository) {}
+
+  async execute({
+    userId,
+    page,
+  }: FetchUserCheckInsHistoryUseCaseRequest): Promise<FetchUserCheckInsHistoryUseCaseResponse> {
+    const checkIns = await this.checkInsRepository.findManyByUserId(
+      userId,
+      page,
+    )
+    if (!checkIns) {
+      throw new ResourceNotFoundError()
+    }
+
+    return { checkIns }
+  }
+}

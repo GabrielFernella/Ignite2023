@@ -10,7 +10,7 @@ export class InMemoryCheckInsRepository implements CheckInsRepository {
     userId: string,
     date: Date,
   ): Promise<CheckIn | null> {
-    const startOfTheDay = dayjs(date).startOf('date')
+    const startOfTheDay = dayjs(date).startOf('date') // dia
     const endOfTheDay = dayjs(date).endOf('date')
 
     const checkInOnSameDate = this.items.find((checkIn) => {
@@ -27,6 +27,12 @@ export class InMemoryCheckInsRepository implements CheckInsRepository {
     }
 
     return checkInOnSameDate
+  }
+
+  async findManyByUserId(userId: string, page: number) {
+    return this.items
+      .filter((index) => index.user_id === userId)
+      .slice((page - 1) * 20, page * 20)
   }
 
   async create(data: Prisma.CheckInUncheckedCreateInput) {
