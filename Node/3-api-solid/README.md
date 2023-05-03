@@ -6,10 +6,10 @@ GynPass style app.
 - [X] Deve ser possível se cadastrar;
 - [X] Deve ser possível se autenticar;
 - [X] Deve ser possível obter o perfil de um usuário logado;
-- [] Deve ser possível obter o número de check-ins realizados pelo usuário logado;
+- [X] Deve ser possível obter o número de check-ins realizados pelo usuário logado;
 - [X] Deve ser possível o usuário ter um histórico de check-ins;
 - [] Deve ser possível o usuário buscar academias próximas;
-- [] Deve ser possível o usuário buscar academias pelo nome;
+- [X] Deve ser possível o usuário buscar academias pelo nome;
 - [X] Deve ser possível o usuário fazer check-in em uma academia;
 - [] Deve ser possível validar o check-in de um usuário;
 - [x] Deve ser possível cadastrar uma academia;
