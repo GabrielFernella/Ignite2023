@@ -8,17 +8,17 @@ GynPass style app.
 - [X] Deve ser possível obter o perfil de um usuário logado;
 - [X] Deve ser possível obter o número de check-ins realizados pelo usuário logado;
 - [X] Deve ser possível o usuário ter um histórico de check-ins;
-- [] Deve ser possível o usuário buscar academias próximas;
+- [X] Deve ser possível o usuário buscar academias próximas (até 10km);
 - [X] Deve ser possível o usuário buscar academias pelo nome;
 - [X] Deve ser possível o usuário fazer check-in em uma academia;
-- [] Deve ser possível validar o check-in de um usuário;
+- [X] Deve ser possível validar o check-in de um usuário;
 - [x] Deve ser possível cadastrar uma academia;
 
 ## RNs (Regras de Negócio)
 - [X] O usuário não deve poder se cadastrar com um e-mail duplicado;
 - [X] O usuário não pode fazer 2 check-in no mesmo dia;
 - [X] O usuário não pode fazer o check-in se não tiver perto (100m) da academia;
-- [] O check-in só pode ser validado até 20 minutos após criado;
+- [X] O check-in só pode ser validado até 20 minutos após criado;
 - [] O check-in só pode ser validado por administradores;
 - [] A academia só pode ser cadastrada por administradores;
 
