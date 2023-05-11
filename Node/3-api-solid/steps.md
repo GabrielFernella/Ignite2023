@@ -12,6 +12,8 @@
 11. npm i @vitest/coverage-c8
 12. npm i -D @vitest/ui 
 13. npm i dayjs
+14. npm i @fastify/jwt
+15. npm i -D npm-run-all
 
 
 
@@ -23,6 +25,8 @@
 5. npx prisma migrate dev
 6. npx prisma studio
 7. docker compose up -d    ||   docker rm api-solid-pg || docker compose stop
+8. npm link (dentro da lib que vc está criando)
+9. npm link vitest-environment-prisma
 
 
 
