@@ -9,8 +9,6 @@ interface QuestionProps {
   authorId: string
 }
 
-export class Question extends Entity {
-  constructor(props:QuestionProps, id?:string){
-    super(props, id)
-  }
+export class Question extends Entity<QuestionProps> {
+
 }
